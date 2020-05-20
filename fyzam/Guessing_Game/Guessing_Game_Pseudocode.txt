@@ -1,0 +1,25 @@
+WHILE (again = TRUE)
+	SET again = FALSE
+	create random number 'R'
+	SET 'G' = 'R+1'
+	WHILE (G not equals R)
+		OUTPUT 'input your guess'
+		INPUT 'G'
+		IF (G > R)
+			OUTPUT 'Too big'
+		END IF
+		
+		IF (G < R)
+			OUTPUT 'Too small'
+		END IF
+		
+		IF (G equals R)
+			OUPUT 'Congratulations'
+			OUTPUT 'Wanna play again?'
+			INPUT 'again'
+		END IF
+	END WHILE
+END WHILE
+
+
+
